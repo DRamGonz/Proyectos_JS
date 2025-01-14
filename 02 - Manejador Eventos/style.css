@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+body {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto;
+}
+
+#contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a nuevas líneas en pantallas pequeñas */
+    justify-content: space-between;
+    gap: 1rem; /* Espacio entre elementos */
+    width: 100%; /* Ancho completo */
+    margin-top: 1rem;
+}
+
+#imagenes,
+#zoom {
+    flex: 1; /* Ocupan proporcionalmente un espacio igual */
+    display: flex;
+    flex-direction: column; /* Contenido interno en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center;
+}
+
+#frame {
+    flex: 3; /* Ocupa el doble del espacio que #imagenes y #zoom */
+    display: flex;
+    flex-direction: column; /* Contenido interno en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+#picture {
+    display: flex;
+    border: 8px solid black;
+    border-radius: 15px;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho del contenedor */
+    height: 350px;;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    overflow: hidden; /* Oculta lo que sobresale */
+    position: relative;
+
+}
+
+#colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+#colors div {
+    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+#negro {
+    background-color: #000000;
+}
+
+#rojo {
+    background-color: #990505;
+}
+
+#azul {
+    background-color: #1815e6;
+}
+
+#amarillo {
+    background-color: #d1d413;
+}
+
+#verde {
+    background-color: #36e630;
+}
+
+#rosa {
+    background-color: #e98aa6;
+}
